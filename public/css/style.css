@@ -1,0 +1,428 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.menu_icons{
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    /* margin-left: -20%; */
+}
+button img{
+    width: 20px;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+
+}
+.menu ul{
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: relative;
+
+}
+.menu ul a:hover {
+    color: #f7a800;
+}
+.menu ul a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+
+}
+
+
+.menu ul a:hover::after {
+    width: 100%;
+    
+}
+.add a{
+    color: #bb2337;
+    text-decoration: none;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.add{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 17px;
+
+}
+.add i{
+    margin-right:5px ;
+}
+button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color: #bb2337;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2 ease-out;
+}
+button span{
+    font-family: 'Anton',sans-serif;
+    font-size: 13px;
+    width: 100%;
+    text-align: center ;
+}
+.home{
+    height: 400px;
+    background-image: url('/images/tajine.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 20px;
+    padding-top: 60px;
+}
+.Cuisiniers{
+    margin: auto;
+    padding: 20px;
+    /* height: auto; */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace,sans-serif;
+
+}
+.Cuisiniers p{
+    font-size:13px;
+    padding: 4px;
+
+  } 
+ .cuisiniers-list {
+     
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    /* height: 200px; */
+    
+
+ }  
+ .cuisiniers-list img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* padding: 20px; */
+
+} /*
+h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    /* text-align: center; */
+
+
+/* } */
+
+ .cuisiniers-list .card {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    margin: 7px;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid rgb(227, 225, 225);
+    border-radius: 15px;
+
+
+    /* height: 200px; */
+
+}
+ .cuisiniers-list .card:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+
+
+}  
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    /* margin-top: 200px; */
+    width: 100%;
+    /* height: 200px; */
+}
+
+.footer-content {
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+
+}
+
+.about h3,
+.links h3,
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-section p {
+
+    padding: 7px;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-contact{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-direction: row;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.about p,.about h3{
+    margin: 10px 80px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+    }
+
+    .menu ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu_icons {
+        display: block;
+    }
+
+    .menu_icons img {
+        width: 30px;
+    }
+
+    .logo {
+        width: 80px;
+        /* margin-left: -10px; */
+    }
+
+    .header-end {
+        /* margin-right: 10px; */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+
+    .footer-section.about h3,
+    .footer-section.links h3,
+    .footer-section.contact h3 {
+        margin: 10px 0;
+    }
+
+    .footer-section ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-section a {
+        padding: 5px;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+    }
+
+    .footer-section.about p,
+    .footer-section.about h3 {
+        margin: 10px auto;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .cuisiniers-list {
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+
+    /* flex-wrap: wrap; */
+
+        /* gap: 120px; */
+        
+    }
+
+    .card {
+        /* width: 90%; */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        /* text-align: center; */
+        /* height: 500px; */
+
+        /* overflow: hidden; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    }
+
+    .card img {
+        /* width: 90%; */
+        /* height: 200px; */
+        border-radius: 10px 10px 0 0;
+    }
+
+   
+
+    
+}
+.specialite {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card-sp {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    text-align: center;
+    
+    /* padding: 5px; */
+}
+
+.card-sp img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+
+}
+
+.card-sp h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    /* color: #333; */
+}
+h2{
+    /* margin: 20px auto; */
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #f7a800;
+    text-shadow: 2px 2px 2px black;
+
+
+}
+.cuisiniers-list .card {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    /* margin: 10px; */
+    padding: 15px;
+    flex-wrap: wrap;
+   
+
+
+    /* height: 200px; */
+
+}
+.card-sp:hover { 
+    transform: scale(1.05);
+
+}
+
+
