@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/profil', function () {
     return view('profil.show');
 });
+Route::get('/profil/images', function () {
+    return view('image.index');
+});
