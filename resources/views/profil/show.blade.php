@@ -3,7 +3,7 @@
     <div class="profil">
 
         <div class="back-icons">
-            <a href=""><i class="fas fa-arrow-left" style="color: #bb2337; font-seize:30px"></i></a>
+            <a href="/"><i class="fas fa-arrow-left" style="color: #bb2337;"></i></a>
         </div>
         <div class="info-profil">
             <div class="img-plats">
@@ -42,19 +42,26 @@
                         <th><p>Description :</p></th>
                         <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores iusto facilis vitae id doloribus in corporis adipisci eaque placeat!</p></td>
                     </tr>
-                    <tr><th><p><i class="fas fa-phone"> </i> telephone :</p></th><td><a href="">  click ici pour contacter!!</a></td> 
+                    <tr><th><p><i class="fas fa-phone"> </i> telephone :</p></th><td><p id="numero-telephone"><a href="">  ***********</a></p></td> 
                     </tr>
 
                     <tr>
                         <tr>
                             <th><p> <i class="fas fa-envelope"></i> </i>  Email :</p></th>
-                            <td><a href=""> click ici pour contacter!!</a></td>
+                            <td><p id="adresse-email"><a href=""> *************************</a></p></td>
                     </tr>
                 </table>
 
                 
                 
-                
+                  <!-- Bloc de paiement -->
+                  <div id="bloc-paiement" style="display: none;">
+                    <!-- Contenu du bloc de paiement -->
+                    <h3 id="titre-paiement"></h3>
+                    <p id="message-paiement"></p>
+                    <!-- Bouton de paiement -->
+                    <button id="bouton-paiement">Payer maintenant</button>
+                </div>
 
             </div>
         </div>
@@ -105,6 +112,7 @@
               <button class="btn btn-next" onclick="nextImage()">&#10095;</button>
           </div>
       </div>
+    
         <h2>Vedios</h2>
         <div class="Vedios">
 

@@ -698,3 +698,11 @@ td {
     text-align: center;
 
 }
+
+#bloc-paiement {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
