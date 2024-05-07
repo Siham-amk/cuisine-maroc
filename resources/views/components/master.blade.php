@@ -6,7 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuisine Maroc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" >
+
     <script src="https://kit.fontawesome.com/9669377fba.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -65,54 +69,27 @@
             }
         };
 // -----------------------------------
-// Récupérer les éléments d'adresse e-mail, de numéro de téléphone et le bloc de paiement
-const adresseEmail = document.getElementById('adresse-email');
-const numeroTelephone = document.getElementById('numero-telephone');
-const blocPaiement = document.getElementById('bloc-paiement');
-const boutonPaiement = document.getElementById('bouton-paiement');
-const titrePaiement = document.getElementById('titre-paiement');
-const messagePaiement = document.getElementById('message-paiement');
 
-// Variable pour suivre l'état d'affichage du bloc de paiement
-let blocPaiementAffiche = false;
+    const afficherpaiement = document.getElementById('afficher-paiement');
+    const blocPaiement = document.getElementById('bloc-paiement');
+    const fermerPaiement = document.getElementById('fermer-paiement');
 
-// Fonction pour afficher le bloc de paiement et mettre à jour son contenu
-function afficherBlocPaiement(titre, message) {
-    blocPaiement.style.display = 'block';
-    titrePaiement.textContent = titre;
-    messagePaiement.textContent = message;
-    blocPaiementAffiche = true; // Mettre à jour l'état d'affichage
-}
+    afficherpaiement.addEventListener('click', () => {
+        blocPaiement.style.display = 'block';
+    });
 
-// Fonction pour cacher le bloc de paiement
-function cacherBlocPaiement() {
-    blocPaiement.style.display = 'none';
-    blocPaiementAffiche = false; // Mettre à jour l'état d'affichage
-}
+    fermerPaiement.addEventListener('click', () => {
+        blocPaiement.style.display = 'none';
+    });
+// ----------------------------------
 
-// Événement de survol sur l'adresse e-mail
-adresseEmail.addEventListener('mouseover', () => {
-    afficherBlocPaiement("Paiement requis pour l'e-mail", "Veuillez effectuer un paiement pour accéder à l'adresse e-mail.");
-});
 
-// Événement de survol sur le numéro de téléphone
-numeroTelephone.addEventListener('mouseover', () => {
-    afficherBlocPaiement("Paiement requis pour le numéro de téléphone", "Veuillez effectuer un paiement pour accéder au numéro de téléphone.");
-});
+        ;
+        // document.getElementById('ajouterPhotooo').addEventListener('click', () => {
+        //     console.log('Button clicked!'); // Check if this log appears in the console
+        //     // alert('Maximum de photos atteint. Veuillez supprimer une photo pour en ajouter une nouvelle.');
+        // });
 
-// Événement de clic sur le bouton de paiement
-boutonPaiement.addEventListener('click', (event) => {
-    event.stopPropagation(); // Empêcher la propagation de l'événement de clic pour éviter de cacher le bloc de paiement
-    // Ajoutez ici votre logique de paiement, par exemple rediriger vers une page de paiement
-    window.location.href = 'page_de_paiement.html';
-});
-
-// Événement de clic sur le document pour cacher le bloc de paiement
-document.addEventListener('click', (event) => {
-    if (blocPaiementAffiche) {
-        cacherBlocPaiement();
-    }
-});
 
 
 </script>

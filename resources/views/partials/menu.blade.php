@@ -6,11 +6,12 @@
 
 
         <ul>
-            <li><a href="">Acceuil</a></li>
-            <li><a href="">Cuisiniers</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">À propos</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/">Acceuil</a></li>
+            <li><a href="/touslescuisiniers">Cuisiniers</a></li>
+            <li><a href="/Chercherchef">Rechercher</a></li>
+            <li><a href="/Ajouterprofil">Ajouter votre profile</a></li>
+            {{-- <li><a href="">À propos</a></li> --}}
+           
 
 
         </ul>
